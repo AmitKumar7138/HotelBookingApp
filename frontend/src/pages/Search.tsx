@@ -1,6 +1,6 @@
 import { useQuery } from "react-query";
 import { useSearchContext } from "../contexts/SearchContext";
-import * as apiClient from "../api.client";
+import * as apiClient from "../api_client";
 import React, { useState } from "react";
 import SearchResultCards from "../components/SearchResultCards";
 import Pagination from "../components/Pagination";
