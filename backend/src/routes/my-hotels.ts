@@ -42,7 +42,7 @@ router.post(
 
             newHotel.imageUrls = imageUrls;
             newHotel.lastUpdated = new Date();
-            newHotel.userID = req.userId;
+            newHotel.userId = req.userId;
 
             //3. Save the new hotel
 
@@ -63,7 +63,7 @@ router.post(
 router.get("/", verifyToken, async (req: Request, res: Response) => {
 
     try {
-        const hotels = await Hotel.find({ userID: req.userId });
+        const hotels = await Hotel.find({ userId: req.userId });
         res.json(hotels);
 
     } catch (error) {
@@ -77,7 +77,7 @@ router.get("/:id", verifyToken, async (req: Request, res: Response) => {
     try {
         const hotel = await Hotel.findOne({
             _id: id,
-            userID: req.userId,
+            userId: req.userId,
         })
 
         res.json(hotel);
@@ -99,7 +99,7 @@ router.put(
 
             const hotel = await Hotel.findOneAndUpdate({
                 _id: req.params.hotelId,
-                userID: req.userId,
+                userId: req.userId,
             }, updatedHotel, { new: true }
             );
 

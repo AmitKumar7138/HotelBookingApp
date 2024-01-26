@@ -97,18 +97,18 @@ router.post("/:hotelId/bookings/payment-intent", verifyToken, async (req: Reques
         currency: "INR",
         metadata: {
             hotelId,
-            userid: req.userId,
+            userId: req.userId,
         },
 
     });
 
     if (!paymentIntent.client_secret) {
-        return res.status(500).json({ message: "Erro creating payment intent" })
+        return res.status(500).json({ message: "Error creating payment intent" })
     }
 
     const response = {
         paymentIntentId: paymentIntent.id,
-        clientSecret: paymentIntent.client_secret,
+        clientSecret: paymentIntent.client_secret.toString(),
         totalCost,
     };
 
@@ -116,7 +116,7 @@ router.post("/:hotelId/bookings/payment-intent", verifyToken, async (req: Reques
 
 });
 
-router.post("/:hotelId/bookings", async (req: Request, res: Response) => {
+router.post("/:hotelId/bookings", verifyToken, async (req: Request, res: Response) => {
     try {
         const paymentIntentId = req.body.paymentIntentId;
 

@@ -64,7 +64,9 @@ export default function Booking() {
                         clientSecret: paymentIntentData.clientSecret,
                     }
                 }>
-                    <BookingForm currentUser={currentUser} paymentIntent={paymentIntentData} />
+                    <BookingForm
+                        currentUser={currentUser}
+                        paymentIntent={paymentIntentData} />
                 </Elements>
             )}
         </div>

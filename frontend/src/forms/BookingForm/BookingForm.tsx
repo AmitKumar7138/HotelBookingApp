@@ -91,7 +91,7 @@ export default function BookingForm({ currentUser, paymentIntent }: Props) {
                     <input className="mt-1 border rounded w-full py-2 px-3 text-gray-700 bg-gray-200 font-normal"
                         type="text"
                         disabled
-                        {...register("LastName")}
+                        {...register("lastName")}
                     />
                 </label>
                 <label className="text-gray-700 text-sm font-bold flex-1 col-span-2">
