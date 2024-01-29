@@ -41,19 +41,19 @@ This hotel booking app allows users to find and book hotels according to their p
 
 ## App Screenshots
 
-| ![Image 1](images\hote-1.png) | ![Image 2](images\hotel-2.png) | 
+| ![Image 1](images/hote-1.png) | ![Image 2](images/hotel-2.png) | 
 |:---:|:---:|
 | *HomePage* | *MyBookings Page* |
 
-|![Image 3](images\hotel-3.png) | ![Image 4](images\hotel-4.png) |
+|![Image 3](images/hotel-3.png) | ![Image 4](images/hotel-4.png) |
 |:---:|:---:|
 |*Admin Hotel page* | *  Sign In page    * |
 
-| ![Image 5](images\hotel-5.png) | ![Image 6](images\hotel-6.png) | 
+| ![Image 5](images/hotel-5.png) | ![Image 6](images/hotel-6.png) | 
 |:---:|:---:|
 | *Hotel Search page* | *Hotel Description Page* |
 
-|![Image 7](images\hotel-7.png) | ![Image 8](images\hotel-8.png) |
+|![Image 7](images/hotel-7.png) | ![Image 8](images/hotel-8.png) |
 |:---:|:---:|
 |*Payment Page* | *Payment Confirmation Page* |
 
